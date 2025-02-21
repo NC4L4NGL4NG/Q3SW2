@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Skill</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #b2e2f2;
+    text-align: center;
+    padding: 20px;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/001/410/432/non_2x/pink-fluid-dynamic-abstract-background-free-vector.jpg');
+    background-side:cover;
+    background-position: center;
+
+}
+
+.container {
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px purple;
+}
+
+.input-box {
+    margin-bottom: 10px;
+}
+
+input {
+    width: 50px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #00aaff;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+h1 {
+    font-size: 15px;
+    color:white;
+}
+
+button:hover {
+    background-color: #0088cc;
+}
+</style>
+<body>
+
+<div class="container">
+    <img src="https://png.pngtree.com/png-clipart/20240905/original/pngtree-pink-rat-isolated-on-transparent-background-png-image_15934478.png" alt="mouse" class="mouse" height=300> 
+    <h2>Hi i'm Avi, I'm a mouse who knows math, test your math skill on me! </h2>
+    
+    <div class="math-content">
+        <h1>Math Skill</h1>
+        <div class="input-box">
+            <label>Enter a value for a:</label>
+            <input type="number" id="a">
+        </div>
+        <div class="input-box">
+            <label>Enter a value for b:</label>
+            <input type="number" id="b">
+        </div>
+        <div class="buttons">
+            <button onclick="getProduct()">Product of a and b</button>
+            <button onclick="getPower()">a raised to b</button>
+            <button onclick="getRemainder()">Get the remainder</button>
+            <button onclick="checkEquality()">Check if a is equal to b</button>
+        </div>
+    </div>
+</div>
+<script>
+ function getProduct() {
+    let a = parseInt(document.getElementById("a").value);
+    let b = parseInt(document.getElementById("b").value);
+    alert("The product is " + (a * b));
+}
+
+function getPower() {
+    let a = parseInt(document.getElementById("a").value);
+    let b = parseInt(document.getElementById("b").value);
+    alert("a raised to b is " + Math.pow(a, b));
+}
+
+function getRemainder() {
+    let a = parseInt(document.getElementById("a").value);
+    let b = parseInt(document.getElementById("b").value);
+    alert("The remainder is " + (a % b));
+}
+
+function checkEquality() {
+    let a = parseInt(document.getElementById("a").value);
+    let b = parseInt(document.getElementById("b").value);
+    if (a === b) {
+        alert("a is equal to b");
+    } else {
+        alert("a is not equal to b");
+    }
+}
+</script>
+<h1>Neriza Calanglang | Seatwork 2 | 2025</h1>
+</body>
+</html>
